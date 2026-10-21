@@ -1,0 +1,38 @@
+{
+  "reviewed_at": "2026-10-21",
+  "entries": [
+    {
+      "project": "cA2A",
+      "repository": "ca2a",
+      "capability": "Compare the official A2A TCK baseline with the extension enabled",
+      "revision": "d312e90307c0fe679101afb28a43a6d19554d3f0",
+      "pull_request": 266,
+      "run": 39665799848,
+      "evidence_class": "synthetic",
+      "result": "Paired TCK runs passed 79 tests each; protected handlers were not invoked.",
+      "limits": "Draft, unmerged implementation. Each run skipped 156 tests and deselected 30. This is bounded interoperability evidence, not full TCK conformance or live deployment acceptance."
+    },
+    {
+      "project": "TRACE Registry",
+      "repository": "trace-registry",
+      "capability": "Persist witness publication intent and fail closed on journal recovery errors",
+      "revision": "e70c10c05ab2b0c4f482d65332d0b8a91fc5882b",
+      "pull_request": 144,
+      "run": 39665123383,
+      "evidence_class": "synthetic",
+      "result": "The 413-test suite passed, including seven new durable-journal regression tests.",
+      "limits": "Draft, unmerged implementation. No live witness deployment or automated retry reconciliation is demonstrated; witness policy remains an operator decision."
+    },
+    {
+      "project": "Telemetry",
+      "repository": "agentrust-telemetry",
+      "capability": "Exercise Python and TypeScript exporters through a real OpenTelemetry Collector",
+      "revision": "27141868bbe729c23ddd97a99aa19fe43251cc59",
+      "pull_request": 100,
+      "run": 39665486568,
+      "evidence_class": "synthetic",
+      "result": "Twelve collector cases passed across healthy delivery, 503, lost acknowledgement, partial success, duplicate replay and restart.",
+      "limits": "Draft, unmerged implementation. Inputs and backend are synthetic. Row-count checks and backend deduplication do not prove exactly-once delivery, full projection fidelity, queue saturation or in-flight restart behavior."
+    }
+  ]
+}
